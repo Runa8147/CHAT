@@ -6,7 +6,6 @@ import google.generativeai as gen_ai
 
 # Load environment variables
 load_dotenv()
-
 # Configure Streamlit page setting
 st.set_page_config(
     page_title="Chat with Gemini-Pro!",
