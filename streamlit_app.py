@@ -128,7 +128,7 @@ st.markdown("Made by  [404 Found](https://404foundxnutrifyai.blogspot.com/)")
 # Display the chat history
 for message in st.session_state.chat_session.history:
     with st.chat_message(translate_role_for_streamlit(message.role)):
-        st.markdown(message.parts[0].text)
+        st.markdown(message.parts[-1].text)
 
 user_prompt = st.chat_input("Ask ✨Nutrify AI about your health or nutrition...")
 if user_prompt:
